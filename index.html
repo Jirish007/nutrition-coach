@@ -114,12 +114,13 @@
   <section class="contact section" id="contact">
     <div class="container">
       <h2>Let's Connect</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+      <form id="contactForm" method="POST" action="submit.php">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="question..."></textarea>
+        <button type="submit" class="btn">Send message</button>
       </form>
+      <div id="formMessage" style="margin-top: 1rem; color: red;"></div>
     </div>
   </section>
 
